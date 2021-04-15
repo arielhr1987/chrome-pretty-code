@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+#pretty-code-toolbar {
+    background-color: tomato;
+    height: 30px;
+}
+
+body > pre {
+    flex: 1;
+    overflow: auto;
+}
+
+#pretty-code {
+    flex: 100%;
+    overflow: hidden;
+}
+
+#pretty-code .CodeMirror {
+    height: 100%;
+}
